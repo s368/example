@@ -26,7 +26,7 @@ object Lists {
     //def sum(xs: List[Int]): Int = ???
     
     def sum(xs: List[Int]): Int = xs match {
-      case Nil => throw new NoSuchElementException("Empty list!")
+      case Nil => 0 //throw new NoSuchElementException("Empty list!")
       case List(x: Int) => x
       case x :: y :: rest => sum((x + y) :: rest) 
     }  
